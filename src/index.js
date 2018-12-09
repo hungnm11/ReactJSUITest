@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './assets/scss/index.scss';
 // eslint-disable-next-line no-unused-vars
 import App from './App';
 import * as serviceWorker from './serviceWorker';
