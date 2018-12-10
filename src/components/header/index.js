@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable no-unused-vars */
 import React from 'react';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 const Header  = () => {
 	return (
@@ -14,17 +15,18 @@ const Header  = () => {
 				<div className="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul className="navbar-nav">
 						<li className="nav-item active">
-							<a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
+							<Link className="nav-link" to="/">Home <span className="sr-only">(current)</span></Link>
 						</li>
 						<li className="nav-item">
-							<a className="nav-link" href="#">About</a>
+							<Link className="nav-link" to="/about">About</Link>
 						</li>
 						<li className="nav-item">
-							<a className="nav-link disabled" href="#">Contact</a>
+							<Link className="nav-link disabled" to="/contact">Contact</Link>
 						</li>
 					</ul>
 				</div>
 			</nav>
+
 			<div className="jumbotron jumbotron-fluid">
 				<div className="container">
 					<h1 className="display-4">Fluid jumbotron</h1>
