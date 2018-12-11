@@ -1,29 +1,44 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable no-unused-vars */
 import React, { Component } from 'react';
-import { Map, GoogleApiWrapper } from 'google-maps-react';
+import GoogleMapReact from 'google-map-react';
 
-const mapStyles = {
-	width: '100%',
-	height: '100%'
-};
+const AnyReactComponent = ({ text }) => (
+  <div style={{
+    color: 'white', 
+    background: 'grey',
+    padding: '15px 10px',
+    display: 'inline-flex',
+    textAlign: 'center',
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: '100%',
+    transform: 'translate(-50%, -50%)'
+  }}>
+    {text}
+  </div>
+);
 
-export class MapContainer extends Component {
-	render() {
-		return (
-			<Map
-				google={this.props.google}
-				zoom={14}
-				style={mapStyles}
-				initialCenter={{
-					lat: -1.2884,
-					lng: 36.8233
-				}}
-			/>
-		);
-	}
+class SimpleMap extends React.Component {
+  static defaultProps = {
+    center: {lat: 10.762622, lng: 106.660172},
+    zoom: 11
+  };
+
+  render() {
+    return (
+       <GoogleMapReact
+        defaultCenter={this.props.center}
+        defaultZoom={this.props.zoom}
+      >
+        <AnyReactComponent 
+          lat={10.762622} 
+          lng={106.660172} 
+          text={'Company Name'} 
+        />
+      </GoogleMapReact>
+    );
+  }
 }
 
-export default GoogleApiWrapper({
-	apiKey: 'AIzaSyCHcTk8g_CTFGH5UPq2TxSOvozTmif3RFQ'
-})(MapContainer);
+export default SimpleMap;
