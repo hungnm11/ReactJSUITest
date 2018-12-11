@@ -8,8 +8,12 @@ const Contact = () => {
 		<div className="container">
 			<div className="row">
 				<div className="col-md-12">
-					<h1>Contact Page</h1>
-					<Map />
+					<h1 className="display-4">Contact Page</h1>
+				</div>
+				<div className="col-md-12">
+					<div className="embed-responsive embed-responsive-21by9">
+						<Map />
+					</div>
 				</div>
 			</div>
 		</div>

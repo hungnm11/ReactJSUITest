@@ -2,10 +2,13 @@ button[type="button"].close {
   display: none;
 } 
 
-.place{  
-  width: 40px;
-  padding: 20px;
-  border: 1px solid blue;
-  background: red;
-  color: yellow; 
+.embed-responsive{  
+  height: 100%;
+  margin-bottom: 25px;
+  & > div {
+    position: initial !important;
+    & > div {
+      width: 60% !important;
+    }
+  }
 }
