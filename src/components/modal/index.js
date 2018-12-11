@@ -10,7 +10,7 @@ const ModalUI = ({
 }) => {
 	const { title, image, desc } = detail;
 	return (
-		<Modal isOpen={isOpen} toggle={toggle.bind(this)} >
+		<Modal isOpen={isOpen} toggle={toggle.bind(this, '', '', '')} >
 			<ModalHeader toggle={toggle}>{title}</ModalHeader>
 			<ModalBody>
 				<CardImg src={image} />
