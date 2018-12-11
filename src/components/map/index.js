@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
 
 const AnyReactComponent = ({ text }) => (
-	<div style={{
+	<div className="map-container" style={{
 		color: 'white', 
 		background: 'grey',
 		padding: '15px 10px',
