@@ -9,10 +9,10 @@ import {
 	ModalFooter, 
 	CardImg,
 	Carousel,
-  CarouselItem,
-  CarouselControl,
-  CarouselIndicators,
-  CarouselCaption
+	CarouselItem,
+	CarouselControl,
+	CarouselIndicators,
+	CarouselCaption
 } from 'reactstrap';
 
 class ModalUI extends Component {
@@ -31,6 +31,6 @@ class ModalUI extends Component {
 			</Modal>
 		);
 	}
-};
+}
 
 export default ModalUI;

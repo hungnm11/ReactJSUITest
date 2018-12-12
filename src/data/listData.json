@@ -1,32 +1,74 @@
 [
   {
+    "id": 1,
     "title": "Card Title 1",
-    "image": "https://iso.500px.com/wp-content/uploads/2016/11/stock-photo-159533631-1500x1000.jpg",
+    "image": [
+      {
+        "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0LW7SZwV7aIA89OBlWXWQ1QJNBsyO2RE1WoahREGGiApXZts",
+        "altText": "Slide 1",
+        "caption": "Slide 1"
+      }
+    ],
     "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
   },
   {
+    "id": 2,
     "title": "Card Title 2",
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0LW7SZwV7aIA89OBlWXWQ1QJNBsyO2RE1WoahREGGiApXZts",
+    "image": [
+      {
+        "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0LW7SZwV7aIA89OBlWXWQ1QJNBsyO2RE1WoahREGGiApXZts",
+        "altText": "Slide 2",
+        "caption": "Slide 2"
+      }
+    ],
     "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
   },
   {
+    "id": 3,
     "title": "Card Title 3",
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_AW6fklnazgScfZlO5hvq8IHZ2K4Qynl9qs3IF20KvjLLsFwL",
+    "image": [
+      {
+        "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0LW7SZwV7aIA89OBlWXWQ1QJNBsyO2RE1WoahREGGiApXZts",
+        "altText": "Slide 3",
+        "caption": "Slide 3"
+      }
+    ],
     "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
   },
   {
-    "title": "Card Title 1",
-    "image": "https://iso.500px.com/wp-content/uploads/2016/11/stock-photo-159533631-1500x1000.jpg",
+    "id": 4,
+    "title": "Card Title 4",
+    "image": [
+      {
+        "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0LW7SZwV7aIA89OBlWXWQ1QJNBsyO2RE1WoahREGGiApXZts",
+        "altText": "Slide 4",
+        "caption": "Slide 4"
+      }
+    ],
     "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
   },
   {
-    "title": "Card Title 2",
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0LW7SZwV7aIA89OBlWXWQ1QJNBsyO2RE1WoahREGGiApXZts",
+    "id": 5,
+    "title": "Card Title 5",
+    "image": [
+      {
+        "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0LW7SZwV7aIA89OBlWXWQ1QJNBsyO2RE1WoahREGGiApXZts",
+        "altText": "Slide 5",
+        "caption": "Slide 5"
+      }
+    ],
     "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
   },
   {
-    "title": "Card Title 3",
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_AW6fklnazgScfZlO5hvq8IHZ2K4Qynl9qs3IF20KvjLLsFwL",
+    "id": 6,
+    "title": "Card Title 6",
+    "image": [
+      {
+        "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0LW7SZwV7aIA89OBlWXWQ1QJNBsyO2RE1WoahREGGiApXZts",
+        "altText": "Slide 6",
+        "caption": "Slide 6"
+      }
+    ],
     "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
   }
 ]
