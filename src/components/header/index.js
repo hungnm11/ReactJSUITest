@@ -2,44 +2,43 @@
 /* eslint-disable no-unused-vars */
 import React, { Component } from 'react';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 class Header extends Component {
 
 	constructor(props) {
-    super(props);
+		super(props);
 
-    this.toggle = this.toggle.bind(this);
-    this.state = {
-      isOpen: false
-    };
-  }
-  toggle() {
-    this.setState({
-      isOpen: !this.state.isOpen
-    });
-  }
+		this.toggle = this.toggle.bind(this);
+		this.state = {
+			isOpen: false
+		};
+	}
+	toggle() {
+		this.setState({
+			isOpen: !this.state.isOpen
+		});
+	}
 
 	render() {
 		return (
 			<div>
 				<Navbar color="light" light expand="md">
-          <NavbarBrand href="/">DEMO</NavbarBrand>
-          <NavbarToggler onClick={this.toggle} />
-          <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="ml-auto" navbar>
-              <NavItem>
-                <NavLink href="/">HOME</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="/about">ABOUT</NavLink>
-              </NavItem>
+					<NavbarBrand href="/">DEMO</NavbarBrand>
+					<NavbarToggler onClick={this.toggle} />
+					<Collapse isOpen={this.state.isOpen} navbar>
+						<Nav className="ml-auto" navbar>
 							<NavItem>
-                <NavLink href="/contact">CONTACT</NavLink>
-              </NavItem>
-            </Nav>
-          </Collapse>
-        </Navbar>
+								<NavLink href="/">HOME</NavLink>
+							</NavItem>
+							<NavItem>
+								<NavLink href="/about">ABOUT</NavLink>
+							</NavItem>
+							<NavItem>
+								<NavLink href="/contact">CONTACT</NavLink>
+							</NavItem>
+						</Nav>
+					</Collapse>
+				</Navbar>
 	
 				<div className="jumbotron jumbotron-fluid">
 					<div className="container">
@@ -50,6 +49,6 @@ class Header extends Component {
 			</div>
 		);
 	}
-};
+}
 
 export default Header;
