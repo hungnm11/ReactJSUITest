@@ -1,9 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable no-unused-vars */
 import React, { Component } from 'react';
-import data from '../../data/listData.json';
 
-const Item = ({ onClick }) => {
+const Item = ({ onClick, data }) => {
 	return data.map((val, index) => {
 		const { title, image , description } = val;
 		return (<div className="col-md-3" key={index}>
