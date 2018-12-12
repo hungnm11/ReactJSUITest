@@ -7,6 +7,16 @@
         "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0LW7SZwV7aIA89OBlWXWQ1QJNBsyO2RE1WoahREGGiApXZts",
         "altText": "Slide 1",
         "caption": "Slide 1"
+      },
+      {
+        "src": "https://cdn.pixabay.com/photo/2017/04/09/09/56/avenue-2215317_960_720.jpg",
+        "altText": "Slide 1",
+        "caption": "Slide 1"
+      },
+      {
+        "src": "https://www.setaswall.com/wp-content/uploads/2017/03/Landscapes-Nature-Trees-Forest-Alley-Wallpaper-1920x1200.jpg",
+        "altText": "Slide 1",
+        "caption": "Slide 1"
       }
     ],
     "description": "Some quick example text to build on the card title and make up the bulk of the card's content."
