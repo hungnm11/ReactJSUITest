@@ -41,7 +41,7 @@ class Body extends Component {
 	render() {
     let list = data;
     const { modal, filterStr } = this.state;
-    const filterItem = filterStr.trim().toLowerCase();
+    filterStr.trim().toLowerCase();
     if (filterStr.length > 0) {
       list = data.filter((i) => {
         return i.title.toLowerCase().match(filterStr);
