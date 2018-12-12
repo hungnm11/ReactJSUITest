@@ -2,13 +2,3 @@ button[type="button"].close {
   display: none;
 } 
 
-.embed-responsive{  
-  height: 100%;
-  margin-bottom: 25px;
-  & > div {
-    position: initial !important;
-    & > div {
-      width: 60% !important;
-    }
-  }
-}

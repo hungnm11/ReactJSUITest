@@ -6,7 +6,7 @@ const About = () => {
 	return <div className="container">
 		<div className="row">
 			<div className="col-md-12">
-				<h1 className="display-4">About Page</h1>
+				<h1 className="display-4 text-center mb-5">About Page</h1>
 				<p>
             Lorem ipsum dolor sit amet, eu duis placerat scriptorem vel. Sit
             atqui aliquip minimum in. Equidem debitis in vel, doming

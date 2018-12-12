@@ -1,3 +1,10 @@
-.map-container {
-  
+.embed-responsive{  
+  height: 100%;
+  margin-bottom: 25px;
+  & > div {
+    position: initial !important;
+    & > div {
+      width: 100% !important;
+    }
+  }
 }
