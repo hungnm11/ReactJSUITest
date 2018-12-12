@@ -8,37 +8,41 @@ import Modal from '../modal';
 class Body extends Component {
   constructor(props) {
 		super(props);
-		this.toggle = this.toggle.bind(this);
+    this.onClickDetail = this.onClickDetail.bind(this);
+    this.onClickClose = this.onClickClose.bind(this);
 		this.state = {
       modal: false,
       detail: ''
 		};
 	}
 
-	toggle(title, image, desc) {
+	onClickDetail(detail) {
       this.setState({
-        modal: !this.state.modal,
-        detail: {
-          title,
-          image,
-          desc
-        }
+        modal: true,
+        detail
       });
+  }
+
+  onClickClose() {
+    this.setState({
+      modal: false
+    });
   }
   
 	render() {
+    const { modal } = this.state;
 		return (
 			<div className="container">
 				<div className="row">
 					<div className="card-group">
 						<Item 
-              onClick={this.toggle}
+              onClick={this.onClickDetail}
             />
-            <Modal 
+            {modal && <Modal 
               isOpen={this.state.modal}
-              toggle={this.toggle}
+              onClickClose={this.onClickClose}
               detail={this.state.detail}
-            />
+            />}
 					</div>
 				</div>
 			</div>

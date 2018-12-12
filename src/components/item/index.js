@@ -8,13 +8,13 @@ const Item = ({ onClick }) => {
 		const { title, image , description } = val;
 		return (<div className="col-md-3" key={index}>
 			<div className="card">
-				<img className="card-img-top" src={image} alt={title} />
+				<img className="card-img-top" src={image[0].src} alt={title} />
 				<div className="card-body">
 					<h5 className="card-title">{title}</h5>
 					<p className="card-text">{description}</p>
 					<button 
 						className="btn btn-primary"
-						onClick={onClick.bind(this, title, image, description)}
+						onClick={onClick.bind(this, val)}
 					>Detail</button>
 				</div>
 			</div>
